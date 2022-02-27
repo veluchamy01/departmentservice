@@ -47,5 +47,10 @@ public class DepartmentController {
 			throw new NoRecordsFoundException("No matching records found for the requested id");
 		}
 	}
+	
+	@GetMapping("/message")
+	public String message() {
+		return "Inithan Arambam... Message from AKS";
+	}
 
 }
